@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Nayaab Pathan - Ayurvedic Physician</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("HeadBG.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .testimonial-bg {
+            background-color: #f8f7f2;
+        }
+        .herb-icon {
+            color: #5a8f5c;
+        }
+        .whatsapp-btn {
+            background-color: #25D366;
+        }
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+    
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 scroll-smooth">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold text-green-800">Dr. Nayaab Pathan</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="hover:text-green-700">Home</a>
+                    <a href="#about" class="hover:text-green-700">About</a>
+                    <a href="#services" class="hover:text-green-700">Services</a>
+                    <a href="#testimonials" class="hover:text-green-700">Testimonials</a>
+                    <a href="#contact" class="hover:text-green-700">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="focus:outline-none">
+                        <i class="fas fa-bars text-green-800"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4">
+            <a href="#home" class="block py-2 hover:text-green-700">Home</a>
+            <a href="#about" class="block py-2 hover:text-green-700">About</a>
+            <a href="#services" class="block py-2 hover:text-green-700">Services</a>
+            <a href="#testimonials" class="block py-2 hover:text-green-700">Testimonials</a>
+            <a href="#contact" class="block py-2 hover:text-green-700">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-screen flex items-center">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Hope PolyClinic</h1>
+            <p class="text-xl md:text-2xl mb-8">Your Fertility Our Priority</p>
+            <a href="#appointment" class="whatsapp-btn text-white font-bold py-3 px-6 rounded-full inline-flex items-center">
+                <i class="fab fa-whatsapp mr-2 text-xl"></i>
+                Book Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="PFP.jpg" alt="Dr. Nayaab Pathan" class="rounded-full w-64 h-64 object-cover mx-auto shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4 text-green-800">About Dr. Nayaab Pathan</h2>
+                    <p class="mb-4">With over 3 years of experience in Ayurvedic medicine, Dr. Nayaab Pathan is dedicated to helping patients achieve optimal health through traditional healing practices combined with modern wellness approaches.</p>
+                    <p class="mb-4">Dr. Pathan completepppd his Bachelor of Ayurvedic Medicine and Surgery (BAMS) from Maharashtra university of health sciences and since had specialized in treating chronic conditions through personalized therapeutic regimens.</p>
+                    <div class="grid grid-cols-2 gap-4 mt-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-certificate herb-icon mr-2"></i>
+                            <span>Certified Ayurvedic Practitioner</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-user-md herb-icon mr-2"></i>
+                            <span>3+ Years Experience</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-book herb-icon mr-2"></i>
+                            <span>Research Publications</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-globe herb-icon mr-2"></i>
+                            <span>International Clientele</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center text-green-800">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl herb-icon mb-4">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Personalized Consultation</h3>
+                    <p class="text-gray-600 mb-4">In-depth analysis of your dosha type and personalized treatment plans based on your unique constitution.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check herb-icon mr-2 mt-1"></i>
+                            <span>Comprehensive dosha assessment</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check herb-icon mr-2 mt-1"></i>
+                            <span>Customized lifestyle recommendations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check herb-icon mr-2 mt-1"></i>
+                            <span>Dietary guidelines</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl herb-icon mb-4">
+                        <i class="fas fa-mortar-pestle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Herbal Therapies</h3>
+                    <p class="text-gray-600 mb-4">Traditional herbal formulations prepared using authentic techniques to address various health concerns.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check herb-icon mr-2 mt-1"></i>
+                            <span>Customized herbal medicines</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check herb-icon mr-2 mt-1"></i>
+                            <span>Detoxification therapies</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check herb-icon mr-2 mt-1"></i>
+                            <span>Herbal supplements</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl herb-icon mb-4">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Panchakarma Therapy</h3>
+                    <p class="text-gray-600 mb-4">Traditional detoxification and rejuvenation procedures to cleanse the body and restore balance.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check herb-icon mr-2 mt-1"></i>
+                            <span>Therapeutic massages</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check herb-icon mr-2 mt-1"></i>
+                            <span>Steam therapy</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check herb-icon mr-2 mt-1"></i>
+                            <span>Specialized cleansing procedures</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 testimonial-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center text-green-800">Patient Testimonials</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div>
+                            <h4 class="font-bold">Zoya Baig </h4>
+                            <div class="text-yellow-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Dr. Nayab Pathan has been an incredible support throughout my PCOD journey. She is compassionate, patient, and highly knowledgeable. She explained everything clearly and created a personalized plan that truly worked for me. Thanks to her holistic approach, I've seen significant improvements in my health. I'm so grateful for her care and would highly recommend her to anyone dealing with PCOD! "</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div>
+                            <h4 class="font-bold">Sana Farooqui </h4>
+                            <div class="text-yellow-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Dr. Nayab is one of the best ayurvedic doctor in and around Kondhwa. 
+                        She is knowledgeable and gives evidence based treatments. I went to her for my son who has developmental and sensory issues. Dr. Nayab was very kind and calm with my son. Treatment included oil massage, steam and basti after which I noticed significant improvement in my child's sleeping pattern. I also observed change in his gut health. Also there was decrease in his restlessness. I recommend her treatment for kids with developmental disorder. ."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div>
+                            <h4 class="font-bold">Mohd Maaz </h4>
+                            <div class="text-yellow-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Great doctor....they treat the roots cause of disease and listen properly the problem and follow purely ayurveda....and proper care on diet ."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="py-16 bg-green-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center text-green-800">Book a Consultation</h2>
+            <div class="max-w-md mx-auto bg-white rounded-lg shadow-md p-8">
+                <form id="appointment-form" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                    </div>
+                    
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number (with country code)</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                    </div>
+                    
+                    <div>
+                        <label for="date" class="block text-sm font-medium text-gray-700 mb-1">Preferred Date</label>
+                        <input type="date" id="date" name="date" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                    </div>
+                    
+                    <div>
+                        <label for="time" class="block text-sm font-medium text-gray-700 mb-1">Preferred Time</label>
+                        <select id="time" name="time" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                            <option value="">Select a time slot</option>
+                            <option value="9:00 AM">9:00 AM</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="11:00 AM">11:00 AM</option>
+                            <option value="12:00 PM">12:00 PM</option>
+                            <option value="4:00 PM">4:00 PM</option>
+                            <option value="5:00 PM">5:00 PM</option>
+                            <option value="6:00 PM">6:00 PM</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="concern" class="block text-sm font-medium text-gray-700 mb-1">Health Concern</label>
+                        <textarea id="concern" name="concern" rows="3" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                    </div>
+                    
+                    <div class="pt-4">
+                        <button type="submit" id="whatsapp-button" class="whatsapp-btn text-white font-bold py-3 px-6 rounded-full inline-flex items-center w-full justify-center">
+                            <i class="fab fa-whatsapp mr-2 text-xl"></i>
+                            Book via WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center text-green-800">Contact Us</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <div class="bg-gray-50 p-6 rounded-lg h-full">
+                        <h3 class="text-xl font-bold mb-4">Clinic Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="herb-icon mr-4 text-xl mt-1">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Address</h4>
+                                    <p class="text-gray-600">Shop No. 4, Eisha Bella Vista Society, Near Crown Bakery,  <br> Ambedker Nager, Kondhwa Budruk, <br> Pune ,Maharashtra 411048 </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="herb-icon mr-4 text-xl mt-1">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Phone</h4>
+                                    <p class="text-gray-600">+91 7249167660 </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="herb-icon mr-4 text-xl mt-1">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <p class="text-gray-600">drnayabpathan@gmail.com </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="herb-icon mr-4 text-xl mt-1">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Clinic Hours</h4>
+                                    <p class="text-gray-600">Monday - Friday: 6:00 PM - 9:00 PM<br>
+                                    Other Timing Available With Prior Appointments</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <h4 class="font-semibold mb-2">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="herb-icon text-xl hover:text-green-600">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/infertility_ayurveda?igsh=MXR1Z3MzZnFndTA1dg==" target="_blank" class="herb-icon text-xl hover:text-green-600">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="herb-icon text-xl hover:text-green-600">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="herb-icon text-xl hover:text-green-600">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-200 rounded-lg h-full">
+                        
+                        
+                        <!-- Placeholder for Google Map -->
+                        <div class="h-64 md:h-full bg-gray-300 rounded-lg flex items-center justify-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.524127706761!2d73.8860582747759!3d18.45990338262192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eb75a484ee8b%3A0xf1893668a8450882!2sDr.%20Nayab%20Pathan!5e0!3m2!1sen!2sin!4v1747565386318!5m2!1sen!2sin" 
+                                width="100%"  height="100%"   style="border:0;"   allowfullscreen=""   loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Dr. Nayaab Pathan</h3>
+                    <p class="max-w-xs">Bridging ancient Ayurvedic wisdom with modern healthcare needs for holistic wellbeing.</p>
+                </div>
+                
+                <div class="mb-6 md:mb-0">
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-green-200">Home</a></li>
+                        <li><a href="#about" class="hover:text-green-200">About</a></li>
+                        <li><a href="#services" class="hover:text-green-200">Services</a></li>
+                        <li><a href="#testimonials" class="hover:text-green-200">Testimonials</a></li>
+                        <li><a href="#appointment" class="hover:text-green-200">Book Appointment</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Subscribe to Our Newsletter</h4>
+                    <form class="flex flex-col sm:flex-row">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l text-gray-800 focus:outline-none mb-2 sm:mb-0">
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-r sm:rounded-l-none">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-green-700 mt-8 pt-6 text-center">
+                <p>&copy; 2025 Dr. Nayaab Pathan Hope  Polycllinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        
+        // WhatsApp Integration
+        document.getElementById('appointment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const concern = document.getElementById('concern').value;
+            
+            // Format date
+            const formattedDate = new Date(date).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            
+            // Create WhatsApp message
+            const message = `Hello Dr. Nayaab, I would like to book an appointment.%0A%0AName: ${name}%0APhone: ${phone}%0ADate: ${formattedDate}%0ATime: ${time}%0AHealth Concern: ${concern}`;
+            
+            // WhatsApp number - replace with the doctor's actual WhatsApp number
+            const whatsappNumber = '917249167660'; // Format: country code without + followed by number
+            
+            // Open WhatsApp
+            window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
